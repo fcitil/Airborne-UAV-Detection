@@ -196,6 +196,8 @@ while True:
     #resize for display
     frame=cv2.resize(im,(1080,720))
     cv2.imshow("Frame", frame)
+    #write to video
+    #out.write(frame)
 
     
     print("Frame: {}".format(cnt))
