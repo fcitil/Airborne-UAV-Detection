@@ -39,10 +39,7 @@ with open("classes.txt", "r") as file_object:
         classes.append(class_name)
 
 # Initialize camera/ video
-#cap = cv2.VideoCapture("videoplayback.mp4")
-#cap = cv2.VideoCapture("Jazz Quad & X-UAV Talon- Chase.mp4")
-#cap = cv2.VideoCapture("FPV Chase of Fixed Wing RC Aircraft.mp4")
-cap = cv2.VideoCapture("test_videos\\» Chasing Myself In The Autopilot Glider.mkv")
+cap = cv2.VideoCapture("» Talon Pro, Mini Drak & Mini Goose chase action.mkv")
 #initial states for fsm
 states = [False, False, False, False, False]
 
