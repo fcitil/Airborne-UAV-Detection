@@ -56,7 +56,7 @@ while True:
     ret, im = cap.read()
     cnt += 1
     ##EXPERIMENTAL
-    if cnt <= 1800:
+    if cnt <= 100:
         print("Frame: ", cnt)
         continue
     ##EXPERIMENTAL
@@ -73,7 +73,7 @@ while True:
     print("for frame : " + str(cnt) + "   milisaniye: ", str(currentDateandtime.microsecond)[:-3])
     """
     """
-    #############EXPERİMENTAL#############
+    #############EXPERIMENTAL#############
     cv2.resize(im, (1200, 1920))
     im = im[300:900, 240:1660]
     if cnt <= 100:
@@ -197,7 +197,7 @@ while True:
     frame=cv2.resize(im,(1080,720))
     cv2.imshow("Frame", frame)
     #write to video
-    #out.write(frame)
+    out.write(frame)
 
     
     print("Frame: {}".format(cnt))
