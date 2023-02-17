@@ -7,6 +7,17 @@ import cv2
 import torch
 import numpy as np
 
+def roll_angle(bbox):
+    """Estimate roll angle of the object in the bounding box wrt front looking onboard camera.
+    params:
+        bbox (list): bounding box in the form [x1, y1, x2, y2]
+    returns:
+        roll_angle (float): roll angle of the object in the bounding box wrt front looking onboard camera
+    """
+
+    #TODO: Implement roll angle estimator
+    return None
+
 def fsm(input_state,states):
     states = [input_state, states[0], states[1], states[2], states[3]]
     if input_state:

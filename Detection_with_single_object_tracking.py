@@ -13,7 +13,7 @@ from net import SiamRPNvot
 
 # modules for tracking model
 from run_SiamRPN import SiamRPN_init, SiamRPN_track
-from utils import get_axis_aligned_bbox, cxy_wh_2_rect, im_to_numpy, area, in_locking_rect, large_enough, fsm
+from utils import get_axis_aligned_bbox, cxy_wh_2_rect, im_to_numpy, area, in_locking_rect, large_enough, fsm, roll_angle
 
 # get supported device
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -76,6 +76,7 @@ while True:
     duration_tic = time.time()
     print(duration_tic)
     """"
+    For Server Communication
     currentDateandtime = datetime.now()
     print(currentDateandtime.strftime('%Y-%m-%d %H:%M:%S.%f'))
     print(currentDateandtime.strftime('%Y-%m-%d %H:%M:%S.%f')[-1:])
@@ -214,6 +215,9 @@ while True:
                                                     locking_timestamps[0]))
             locking_timestamps = [0, 0]
 
+    #ROLL ANGLE
+    roll_ang = roll_angle(rect)
+    print("Roll angle: ", roll_ang)
     # exp
     cv2.putText(im, "states: {}".format(states), (10, 180),
                 cv2.FONT_HERSHEY_PLAIN, 2, (0, 255, 0), 1)
