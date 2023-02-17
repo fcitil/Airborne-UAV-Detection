@@ -52,7 +52,7 @@ with open("classes.txt", "r") as file_object:
         classes.append(class_name)
 
 # Initialize camera/ video
-cap = cv2.VideoCapture("Misty FPV Close Proximity Chase.mp4")
+cap = cv2.VideoCapture("» Talon Pro, Mini Drak & Mini Goose chase action.mkv")
 
 cnt = 0  # frame counter
 detection_initiated = False  # False until the first detection, then True
@@ -87,7 +87,7 @@ while True:
     """
     #############EXPERIMENTAL#############
     cv2.resize(im, (1200, 1920))
-    im = im[300:900, 240:1660]
+    im = im[300:900, 240:1660]git 
     if cnt <= 100:
         print(cnt)
         continue
@@ -225,8 +225,8 @@ while True:
                 (10, 140), cv2.FONT_HERSHEY_PLAIN, 2, (150, 250, 250), 2)
     
 	# resize for display 
-    frame = cv2.resize(im, (1920, 1080)) #I think we can change the output size to be one of the first parameters to put in 
-	cv2.imshow("Frame", frame)
+    frame = cv2.resize(im, (960, 540)) #I think we can change the output size to be one of the first parameters to put in 
+    cv2.imshow("Frame", frame)
     # write to video
     # out.write(frame)
 
