@@ -225,7 +225,7 @@ while True:
                 (10, 140), cv2.FONT_HERSHEY_PLAIN, 2, (150, 250, 250), 2)
     
 	# resize for display 
-	frame = cv2.resize(im, (1920, 1080)) #I think we can change the output size to be one of the first parameters to put in 
+    frame = cv2.resize(im, (1920, 1080)) #I think we can change the output size to be one of the first parameters to put in 
 	cv2.imshow("Frame", frame)
     # write to video
     # out.write(frame)
