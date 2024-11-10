@@ -1,6 +1,12 @@
 # Airborne-UAV-Detection
-Rival UAV Detection Algorithm for Fighter UAVs, 
-add [these](https://drive.google.com/drive/folders/1QBASgyERZHDnktAR0emEWmLIq3ajhELx?usp=sharing) files to your working directory 
+Rival UAV Detection Algorithm for Fighter UAVs:
+
+<div style="display: flex;">
+    <img src="https://github.com/fcitil/fcitil.github.io/blob/master/assets/img/DogFighterUAV/UAV_tracking.gif" alt="Image 1" width="45%" />
+    <img src="https://github.com/fcitil/fcitil.github.io/blob/master/assets/img/DogFighterUAV/fligth2.gif" alt="Image 2" width="45%" />
+</div>
+
+Add [these](https://drive.google.com/drive/folders/1QBASgyERZHDnktAR0emEWmLIq3ajhELx?usp=sharing) files to your working directory. 
 
 Image processing algorithm consists of two parts, object detection
 and object tracking respectively. Once the rival UAV is detected and localized with an object
